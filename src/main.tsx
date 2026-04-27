@@ -7,11 +7,7 @@ import './styles.css'
 const router = getRouter()
 
 const rootElement = document.getElementById('app')!
-if (!rootElement.innerHTML) {
-  const root = ReactDOM.createRoot(rootElement)
-  root.render(
-    <React.StrictMode>
-      <RouterProvider router={router} />
-    </React.StrictMode>,
-  )
-}
+const root = ReactDOM.createRoot(rootElement)
+root.render(
+  <RouterProvider router={router} />
+)
